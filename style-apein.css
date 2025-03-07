@@ -2850,6 +2850,10 @@ Contactos
         font-size: 1rem;
     }
 
+/* Chat Window Container */
+.chat-window {
+    right: 18%;
+}
 
     /* boton arriba */
     #scrollToTopBtn {
