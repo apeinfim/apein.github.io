@@ -2,25 +2,105 @@ document.addEventListener('DOMContentLoaded', function () {
     const chatWindow = document.querySelector('.chat-window');
     const chatIcon = document.querySelector('.chat-icon');
     const closeButton = document.querySelector('.close-chat');
-
-    // Función para mostrar/ocultar el chat
+    
+    // Target your specific menu elements
+    const menuCheckbox = document.getElementById('lab-fim-menu');
+    const menuIcon = document.querySelector('.lab-menu-icono');
+    const navbar = document.querySelector('.navbar');
+    
+    // Function to check if the menu is currently open
+    function isMenuOpen() {
+        // Check if the menu checkbox is checked
+        if (menuCheckbox && menuCheckbox.checked) {
+            return true;
+        }
+        
+        // Check if the navbar is visible (left: 0 instead of left: -100%)
+        if (navbar) {
+            const navbarStyle = window.getComputedStyle(navbar);
+            if (navbarStyle.left === '0px' || navbarStyle.left === '0') {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    // Update WhatsApp icon visibility based on menu state
+    function updateChatIconVisibility() {
+        if (isMenuOpen()) {
+            // Hide chat icon when menu is open
+            chatIcon.style.display = 'none';
+            chatWindow.style.display = 'none';
+        } else {
+            // Show chat icon when menu is closed
+            chatIcon.style.display = 'block';
+        }
+    }
+    
+    // Toggle chat window when clicking the chat icon
     chatIcon.addEventListener('click', function () {
         const isVisible = chatWindow.style.display === 'block';
         chatWindow.style.display = isVisible ? 'none' : 'block';
     });
-
-    // Cerrar al hacer click en el botón de cerrar (X)
+    
+    // Close chat window when clicking the close button
     closeButton.addEventListener('click', function () {
         chatWindow.style.display = 'none';
     });
-
-    // Cerrar al hacer click fuera del chat
+    
+    // Close chat window when clicking outside
     document.addEventListener('click', function (event) {
         if (!chatWindow.contains(event.target) && !chatIcon.contains(event.target)) {
             chatWindow.style.display = 'none';
         }
     });
+    
+    // Watch for changes to the menu checkbox
+    if (menuCheckbox) {
+        menuCheckbox.addEventListener('change', function() {
+            updateChatIconVisibility();
+        });
+    }
+    
+    // Watch for clicks on the menu icon
+    if (menuIcon) {
+        menuIcon.addEventListener('click', function() {
+            // Short delay to allow checkbox state to update
+            setTimeout(updateChatIconVisibility, 50);
+        });
+    }
+    
+    // Watch for transition end on the navbar
+    if (navbar) {
+        navbar.addEventListener('transitionend', function(event) {
+            if (event.propertyName === 'left') {
+                updateChatIconVisibility();
+            }
+        });
+    }
+    
+    // Set up a mutation observer to detect changes in the navbar style
+    if (navbar) {
+        const observer = new MutationObserver(function(mutations) {
+            for (const mutation of mutations) {
+                if (mutation.attributeName === 'style') {
+                    updateChatIconVisibility();
+                    break;
+                }
+            }
+        });
+        
+        observer.observe(navbar, { attributes: true, attributeFilter: ['style', 'class'] });
+    }
+    
+    // Initial check
+    updateChatIconVisibility();
+    
+    // Run again when page is fully loaded
+    window.addEventListener('load', updateChatIconVisibility);
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
