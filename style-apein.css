@@ -903,7 +903,7 @@ Table of Contents:
 
 .continf p {
     font-size: 1.2rem;
-    font-weight: 500;
+     font-weight: lighter;
     padding-top: 5px;
     line-height: 1.4;
     /* Mejor legibilidad */
