@@ -2336,9 +2336,12 @@ Nosotros
         text-align: center;
     }
 
-    .cert-text h2 {
+        .cert-text h2 {
+        color: var(--black);
         font-size: 1.4rem;
+        font-weight: 600;
     }
+
 
     .cert-img {
         flex-direction: column;
