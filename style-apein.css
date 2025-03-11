@@ -1268,6 +1268,7 @@ div#item-16.item.tecnologia {
 
 .description {
     color: var(--black);
+      justify-self: center;
 }
 
 .description p {
