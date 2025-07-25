@@ -1710,6 +1710,7 @@ div#item-16.item.tecnologia {
         letter-spacing: 0.6px;
     }
 .links ul li a {
+        font-size: 0.9rem;
         line-height: 1;
         margin: 4px 0px;
 }
