@@ -1709,12 +1709,13 @@ div#item-16.item.tecnologia {
         line-height: 1.2;
         letter-spacing: 0.6px;
     }
-
+.links ul li a {
+        line-height: 1;
+        margin: 4px 0px;
+}
     a {
         font-size: 1.4rem;
         font-weight:lighter;
-        line-height: 1;
-        margin: 4px 0px;
     }
 
     .container {
