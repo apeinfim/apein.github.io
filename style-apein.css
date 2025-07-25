@@ -1621,7 +1621,7 @@ div#item-16.item.tecnologia {
     border: 3px solid var(--ocean-blue);
     border-radius: 50%;
     padding: 8px 18px;
-    font-size: 30px;
+    font-size: 28px;
     cursor: pointer;
 }
 
@@ -2943,7 +2943,7 @@ Contactos
         border: 3px solid var(--ocean-blue);
         border-radius: 50%;
         padding: 8px 18px;
-        font-size: 30px;
+        font-size: 28px;
         cursor: pointer;
     }
 
