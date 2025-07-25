@@ -1713,6 +1713,8 @@ div#item-16.item.tecnologia {
     a {
         font-size: 1.4rem;
         font-weight:lighter;
+        line-height: 1;
+        margin: 4px 0px;
     }
 
     .container {
