@@ -1761,10 +1761,10 @@ div#item-16.item.tecnologia {
 
     .navbar {
         position: fixed;
-        top: 60px;
+        top: 45px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(104vh - 60px);
         background-color: var(--Jet);
         transition: left 0.3s ease;
         display: flex;
