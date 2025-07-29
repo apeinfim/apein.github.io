@@ -93,6 +93,7 @@ h5 {
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 700;
     letter-spacing: 0.7px;
+    ;
     line-height: 1.3;
     text-wrap: pretty;
 
@@ -902,7 +903,7 @@ Table of Contents:
 
 .continf p {
     font-size: 1.2rem;
-     font-weight: lighter;
+    font-weight: lighter;
     padding-top: 5px;
     line-height: 1.4;
     /* Mejor legibilidad */
@@ -1267,7 +1268,7 @@ div#item-16.item.tecnologia {
 
 .description {
     color: var(--black);
-      justify-self: center;
+    justify-self: center;
 }
 
 .description p {
@@ -1621,7 +1622,7 @@ div#item-16.item.tecnologia {
     border: 3px solid var(--ocean-blue);
     border-radius: 50%;
     padding: 8px 18px;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -1694,8 +1695,8 @@ div#item-16.item.tecnologia {
     }
 
     h5 {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: 600;
     }
 
     h6 {
@@ -1704,19 +1705,14 @@ div#item-16.item.tecnologia {
     }
 
     p {
-        font-size: 1.3rem;
+       font-size: clamp(1rem, 2.5vw, 1.4rem);
         font-weight: lighter;
         line-height: 1.2;
         letter-spacing: 0.6px;
     }
-.links ul li a {
-        font-size: 0.9rem;
-        line-height: 1;
-        margin: 4px 0px;
-}
+
     a {
         font-size: 1.4rem;
-        font-weight:lighter;
     }
 
     .container {
@@ -1724,7 +1720,7 @@ div#item-16.item.tecnologia {
     }
 
     .lab-menu {
-        padding: 5px 15px;
+        padding: 10px 15px;
         background-color: var(--Jet);
         position: fixed;
         width: 100%;
@@ -1736,9 +1732,8 @@ div#item-16.item.tecnologia {
     }
 
     .lab-logo-1 {
-        width: 100px;
+        width: 140px;
         height: auto;
-        margin: 1px 0;
         margin-left: 2vw;
     }
 
@@ -1753,7 +1748,7 @@ div#item-16.item.tecnologia {
     }
 
     .lab-menu-icono {
-        width: 20px;
+        width: 30px;
         height: auto;
         margin-right: 10px;
         margin-top: 5px;
@@ -1767,10 +1762,10 @@ div#item-16.item.tecnologia {
 
     .navbar {
         position: fixed;
-        top: 42px;
+        top: 60px;
         left: -100%;
         width: 100%;
-        height: calc(104vh - 60px);
+        height: calc(100vh - 60px);
         background-color: var(--Jet);
         transition: left 0.3s ease;
         display: flex;
@@ -1793,18 +1788,19 @@ div#item-16.item.tecnologia {
     .lab-menu-2 ul {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1rem;
         padding: 0;
         margin: 0;
     }
 
     .lab-menu-1 ul li a,
     .lab-menu-2 ul li a {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: white;
         text-transform: uppercase;
         letter-spacing: 1px;
         display: block;
-        padding: 10px 0;
+        padding: 4px 0;
     }
 
     .socials {
@@ -1856,13 +1852,13 @@ div#item-16.item.tecnologia {
     }
 
     .titulo {
-        margin-top: 46px;
+        margin-top: 69px;
         padding: 10px 0;
     }
 
     .titulo h1 {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
     }
 
     .swiper-button-prev::after,
@@ -1898,7 +1894,7 @@ div#item-16.item.tecnologia {
     }
 
     .slider-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -1906,7 +1902,11 @@ div#item-16.item.tecnologia {
     }
 
     .slider-txt p {
-        margin: 0px 0px;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+        margin: 0.5rem;
         text-align: justify;
     }
 
@@ -1973,8 +1973,9 @@ div#item-16.item.tecnologia {
     }
 
     .btn-1 {
-        margin-bottom: 10px 0px;
-        font-size: 1rem;
+        margin: 0.2rem;
+        padding: 0.4rem 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
     }
 
     .autom {
@@ -1993,7 +1994,7 @@ div#item-16.item.tecnologia {
     }
 
     .autom-autom-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.5;
         letter-spacing: px;
         word-spacing: 0.004cap;
@@ -2004,7 +2005,13 @@ div#item-16.item.tecnologia {
     }
 
     .autom-autom-txt p {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+        margin: 0.5rem;
         text-align: justify;
+
 
     }
 
@@ -2044,7 +2051,7 @@ div#item-16.item.tecnologia {
     }
 
     .contr-contr-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.5;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2055,6 +2062,11 @@ div#item-16.item.tecnologia {
     }
 
     .contr-contr-txt p {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+        margin: 0.5rem;
         text-align: justify;
     }
 
@@ -2115,7 +2127,7 @@ div#item-16.item.tecnologia {
     }
 
     .horario-info h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2125,7 +2137,8 @@ div#item-16.item.tecnologia {
 
     .horario-info h5 {
         text-align: center;
-        font-size: 1.6rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2133,7 +2146,8 @@ div#item-16.item.tecnologia {
 
     .horario-info h6 {
         text-align: center;
-        font-size: 1.1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
         line-height: 1.3;
         letter-spacing: 0px;
         word-spacing: 0.004cap;
@@ -2146,12 +2160,16 @@ div#item-16.item.tecnologia {
         flex-direction: column;
     }
 
-    .title h2{
-        font-size: 1.7rem;
+    .title h2 {
+   font-size: clamp(1.18rem, 2.5vw, 1.4rem);
+   font-weight: bolder;
     }
-    .description.tecnologia h2{
-        font-size: 1.5rem;
- text-align: center;
+
+    .description.tecnologia h2 {
+        margin: 0.5rem 0;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
+        font-weight: bolder;
+        text-align: center;
     }
 
     .mapa {
@@ -2186,8 +2204,12 @@ div#item-16.item.tecnologia {
 
     .footert h2 {
         padding: 20px auto;
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
         letter-spacing: 1px;
+    }
+
+    .links h5 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
     }
 
     .links {
@@ -2203,22 +2225,36 @@ div#item-16.item.tecnologia {
     }
 
     .links li {
-        font-size: 12px;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
+        font-weight: lighter;
+    }
+
+    .links ul li a {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
+        color: var(--white-wave);
+        word-spacing: 1px;
+        line-height: 1.2;
+        letter-spacing: 0.7px;
+        text-wrap: pretty;
+        margin: 4px 0px;
+        display: inline-block;
     }
 
     /*------------------------------------*\
 Nosotros
   \*------------------------------------*/
     .header-content-nosotros {
-        margin-top: 43px;
+        margin-top: 69px;
         background-image: url('images-apein/nosotros/portada.jpg');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 9.6rem;
+        width: 23.5rem;
+        height: 10rem;
         padding-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -2241,7 +2277,7 @@ Nosotros
     }
 
     .mision-mision-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2250,7 +2286,7 @@ Nosotros
 
     .mision-mision-txt p {
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2292,7 +2328,7 @@ Nosotros
     }
 
     .vision-vision-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2301,7 +2337,7 @@ Nosotros
 
     .vision-vision-txt p {
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2342,9 +2378,9 @@ Nosotros
         text-align: center;
     }
 
-        .cert-text h2 {
+    .cert-text h2 {
         color: var(--black);
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         font-weight: 700;
     }
 
@@ -2388,7 +2424,7 @@ TECNOLOGIA
     }
 
     .fanuc-fanuc-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2397,7 +2433,7 @@ TECNOLOGIA
 
     .fanuc-fanuc-txt p {
         text-align: justify;
-        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2440,7 +2476,7 @@ TECNOLOGIA
     }
 
     .kuka-kuka-txt h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2449,7 +2485,7 @@ TECNOLOGIA
 
     .kuka-kuka-txt p {
         text-align: justify;
-        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2469,8 +2505,13 @@ TECNOLOGIA
         border-radius: 20px;
     }
 
+    .description.tecnologia p {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        margin: 0.5rem;
+    }
+
     .block-button {
-        margin: 1rem auto;
+        margin: 0.5rem auto;
     }
 
     div.column-section.tecnologia {
@@ -2510,7 +2551,7 @@ TECNOLOGIA
     }
 
     div#item-1.item.tecnologia h4 {
-       font-size: 1.2rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2524,6 +2565,7 @@ TECNOLOGIA
     }
 
     div#item-2.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2536,6 +2578,7 @@ TECNOLOGIA
     }
 
     div#item-3.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2548,6 +2591,7 @@ TECNOLOGIA
     }
 
     div#item-4.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2560,6 +2604,7 @@ TECNOLOGIA
     }
 
     div#item-5.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2572,6 +2617,7 @@ TECNOLOGIA
     }
 
     div#item-6.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2584,6 +2630,7 @@ TECNOLOGIA
     }
 
     div#item-7.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2596,6 +2643,7 @@ TECNOLOGIA
     }
 
     div#item-8.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2609,6 +2657,7 @@ TECNOLOGIA
     }
 
     div#item-9.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2621,6 +2670,7 @@ TECNOLOGIA
     }
 
     div#item-17.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2633,6 +2683,7 @@ TECNOLOGIA
     }
 
     div#item-10.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2645,6 +2696,8 @@ TECNOLOGIA
     }
 
     div#item-11.item.tecnologia h4 {
+
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2657,6 +2710,7 @@ TECNOLOGIA
     }
 
     div#item-12.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2669,6 +2723,7 @@ TECNOLOGIA
     }
 
     div#item-13.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2681,6 +2736,7 @@ TECNOLOGIA
     }
 
     div#item-14.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2693,6 +2749,7 @@ TECNOLOGIA
     }
 
     div#item-15.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2705,6 +2762,7 @@ TECNOLOGIA
     }
 
     div#item-16.item.tecnologia h4 {
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         color: var(--white-wave);
     }
 
@@ -2728,11 +2786,10 @@ Contactos
     .continf {
         width: 100%;
         text-align: center;
-        margin-top: 100px;
     }
 
     .contacto-contacto h2 {
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2743,15 +2800,22 @@ Contactos
     .contacto-contacto h5 {
 
         text-align: center;
-        font-size: 1.4rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
+        font-weight: 600;
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
     }
 
+    .continf h5 {
+        padding-top: 14px;
+        padding-bottom: 4px;
+    }
+
     .contacto-contacto p {
         text-align: center;
-        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
@@ -2822,7 +2886,6 @@ Contactos
     }
 
     .header-section-capacitacion {
-        margin-top: 46px;
         flex-direction: column;
     }
 
@@ -2833,12 +2896,15 @@ Contactos
     .page-title {
         width: 100%;
         margin: 0;
-        padding: 1.5rem;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+      
     }
 
     .page-title h1 {
-        font-size: 1.8rem;
-        padding: .5rem 1rem;
+        font-size: clamp(1.18rem, 2.5vw, 1.4rem);
+        padding: 1rem 1rem;
+        margin-bottom: 0rem;
         border-radius: 1rem;
     }
 
@@ -2850,6 +2916,10 @@ Contactos
 
     .swiper-slide img {
         width: -webkit-fill-available;
+    }
+
+    .page-offer .swiper-slide img {
+        margin-top: 0rem;
     }
 
     .column-1 {
@@ -2866,7 +2936,14 @@ Contactos
     }
 
     .block-button {
-        width: 80%;
+        padding: 0.5rem;
+        width: 100%;
+        height: 80px;
+    }
+
+    button.block-button.tecnologia {
+        width: 100%;
+        height: 80px;
     }
 
     .section-dropdown {
@@ -2908,7 +2985,6 @@ Contactos
 
     /* -- Servicios -- */
     .header-section-servicios {
-        margin-top: 46px;
         background-size: cover;
     }
 
@@ -2927,7 +3003,8 @@ Contactos
     }
 
     .item-description p {
-        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        font-weight: lighter;
     }
 
     /* Chat Window Container */
@@ -2947,7 +3024,7 @@ Contactos
         border: 3px solid var(--ocean-blue);
         border-radius: 50%;
         padding: 8px 18px;
-        font-size: 28px;
+        font-size: 30px;
         cursor: pointer;
     }
 
@@ -2968,4 +3045,12 @@ Contactos
         border-radius: 0px;
 
     }
+
+    .contform .btn-1 {
+        margin: 0.2rem;
+        padding: 0.4rem 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+
+    }
+
 }
