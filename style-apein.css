@@ -2234,7 +2234,7 @@ div#item-16.item.tecnologia {
 
     .links ul li a {
         font-size: clamp(1rem, 2.5vw, 1.4rem);
-        font-weight: 400;
+        font-weight: lighter;
         color: var(--white-wave);
         word-spacing: 1px;
         line-height: 1.2;
