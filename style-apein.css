@@ -1856,10 +1856,12 @@ div#item-16.item.tecnologia {
     }
 
     .titulo {
-        margin-top: 69px;
+        margin-top: 62px;
         padding: 10px 0;
     }
-
+.header-section-servicios {
+    margin-top: 62px;
+}
     .titulo h1 {
         text-align: center;
         font-size: clamp(1.2rem, 2.5vw, 1.4rem);
@@ -2252,13 +2254,13 @@ div#item-16.item.tecnologia {
 Nosotros
   \*------------------------------------*/
     .header-content-nosotros {
-        margin-top: 69px;
+        margin-top: 62px;
         background-image: url('images-apein/nosotros/portada.jpg');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        width: 23.5rem;
-        height: 10rem;
+        width: 22.5rem;
+        height: 9.5rem;
         padding-top: auto;
         margin-left: auto;
         margin-right: auto;
