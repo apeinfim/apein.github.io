@@ -1732,7 +1732,7 @@ div#item-16.item.tecnologia {
     }
 
     .lab-logo-1 {
-        width: 140px;
+        width: 120px;
         height: auto;
         margin-left: 2vw;
     }
@@ -1746,9 +1746,13 @@ div#item-16.item.tecnologia {
         inline-size: center;
         width: 200px;
     }
-
+.apein-logo-3 {
+    align-items: center;
+    height: 70px;
+    height: 1;
+}
     .lab-menu-icono {
-        width: 30px;
+        width: 20px;
         height: auto;
         margin-right: 10px;
         margin-top: 5px;
