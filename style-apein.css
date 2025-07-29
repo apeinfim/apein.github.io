@@ -1732,7 +1732,7 @@ div#item-16.item.tecnologia {
     }
 
     .lab-logo-1 {
-        width: 120px;
+        width: 90px;
         height: auto;
         margin-left: 2vw;
     }
@@ -1766,16 +1766,16 @@ div#item-16.item.tecnologia {
 
     .navbar {
         position: fixed;
-        top: 60px;
+        top: 50px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(102vh - 60px);
         background-color: var(--Jet);
         transition: left 0.3s ease;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px 0;
+        padding: 25px 0;
     }
 
     #lab-fim-menu:checked~.navbar {
@@ -1856,7 +1856,7 @@ div#item-16.item.tecnologia {
     }
 
     .titulo {
-        margin-top: 62px;
+        margin-top: 51px;
         padding: 10px 0;
     }
 .header-section-servicios {
